@@ -54,7 +54,7 @@
             </li> -->
 
             <li class="nav-item menu-open">
-              <a href="" class="nav-link <?php if($title == 'Data Peserta Didik' OR $title == 'Informasi Data Siswa' OR $title == 'Upload Photo Peserta Didik' OR $title == 'Informasi Data Orangtua/Wali' OR $title == 'Tambah Data Siswa' OR $title == 'Data Peserta Didik Yang Belum diverifikasi') echo 'active'?>">
+              <a href="" class="nav-link <?php if($title == 'Data Peserta Didik' OR $title == 'Informasi Data Siswa' OR $title == 'Upload Photo Peserta Didik' OR $title == 'Informasi Data Orangtua/Wali' OR $title == 'Tambah Data Siswa' OR $title == 'Data Peserta Didik Yang Belum diverifikasi' OR $title == 'Upload Berkas Peserta Didik') echo 'active'?>">
                 <i class="nav-icon fas fa-book"></i>
                 <p>
                 Data Pendaftar
@@ -63,7 +63,7 @@
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="./data-peserta-didik" class="nav-link <?php if($title == 'Data Peserta Didik' OR $title == 'Informasi Data Siswa' OR $title == 'Upload Photo Peserta Didik' OR $title == 'Informasi Data Orangtua/Wali' OR $title == 'Tambah Data Siswa') echo 'active'?>">
+                  <a href="./data-peserta-didik" class="nav-link <?php if($title == 'Data Peserta Didik' OR $title == 'Informasi Data Siswa' OR $title == 'Upload Photo Peserta Didik' OR $title == 'Informasi Data Orangtua/Wali' OR $title == 'Tambah Data Siswa' OR $title == 'Upload Berkas Peserta Didik') echo 'active'?>">
                     <i class="far fa-circle nav-icon"></i>
                     <p>Data Peserta Didik</p>
                   </a>

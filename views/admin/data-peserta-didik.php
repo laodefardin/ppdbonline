@@ -60,10 +60,10 @@ $query = $koneksi->query("SELECT * FROM tb_siswa");
               <th style="width: 1%">
                 #
               </th>
-              <th style="width: 18%">
+              <th style="width: 10%">
                 No. Pendaftaran
               </th>
-              <th style="width: 15%">
+              <th style="width: 10%">
                 Nama Lengkap
               </th>
               <th style="width: 9%">
@@ -134,6 +134,11 @@ $query = $koneksi->query("SELECT * FROM tb_siswa");
                   <i class="fas fa-upload">
                   </i>
                   Foto Siswa
+                </a>
+                <a class="btn btn-primary btn-sm" href="upload-berkas?no-pendaftaran=<?= $data['no_pendaftaran']; ?>">
+                  <i class="fas fa-upload">
+                  </i>
+                  Berkas Siswa
                 </a>
                 <a class="btn btn-info btn-sm" href="data-ortu?no-pendaftaran=<?= $data['no_pendaftaran'] ?>">
                   <i class="fas fa-folder">
