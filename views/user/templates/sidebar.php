@@ -80,6 +80,13 @@
                     <p>Upload Photo</p>
                   </a>
                 </li>
+                <li class="nav-item">
+                  <a href="./upload-berkas"
+                    class="nav-link <?php if($title == 'Upload Berkas Peserta Didik') echo "active" ?>">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Upload Berkas</p>
+                  </a>
+                </li>
                 <!-- <li class="nav-item">
                   <a href="./hasil-seleksi"
                     class="nav-link <?php if($title == 'Pengumuman Hasil Seleksi') echo "active" ?>">

@@ -339,9 +339,6 @@ $query = $koneksi->query("SELECT * FROM tb_siswa WHERE id_siswa = '$id_siswa' ")
                             <option value="Kesulitan Belajar (K)"
                               <?php if ($data['kebutuhan_khusus'] == 'Kesulitan Belajar (K)') { echo 'selected'; } ?>>
                               Kesulitan Belajar (K)</option>
-                            <option value="Narkoba (N)"
-                              <?php if ($data['kebutuhan_khusus'] == 'Narkoba (N)') { echo 'selected'; } ?>>Narkoba (N)
-                            </option>
                             <option value="Indigo (O)"
                               <?php if ($data['kebutuhan_khusus'] == 'Indigo (O)') { echo 'selected'; } ?>>Indigo (O)
                             </option>

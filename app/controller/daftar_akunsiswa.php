@@ -42,7 +42,7 @@ if (isset($_POST['tambah'])){
   }else{
 
     $query = 'INSERT INTO tb_siswa (
-      no_pendaftaran, username, nama_siswa, jenis_kelamin, tanggal_lahir, agama_siswa, alamat_jalan, nonik, tempat_lahir, nama_negara, nama_provinsi, nama_kabupaten, alamat_kelurahan, alamat_kecamatan, kode_pos, moda_transportasi, tinggi_badan, anak_keberapa, kebutuhan_khusus, tempat_tinggal, berat_badan, jumlah_saudara_kandung, nama_ayah, pendidikan_ayah, penghasilan_ayah, tahun_lahir_ayah, pekerjaan_ayah, nohp_ayah, nama_ibu, pendidikan_ibu, penghasilan_ibu,tahun_lahir_ibu, pekerjaan_ibu, nohp_ibu, alamat_ortu, nama_wali, pendidikan_wali, penghasilan_wali, tahun_lahir_wali, pekerjaan_wali, nohp_wali, alamat_wali, foto, status_administrasi, level, tgl_buat, tgl_ubah)
+      no_pendaftaran, username, nama_siswa, jenis_kelamin, tanggal_lahir, agama_siswa, alamat_jalan, nonik, tempat_lahir, nama_negara, nama_provinsi, nama_kabupaten, alamat_kelurahan, alamat_kecamatan, kode_pos, moda_transportasi, tinggi_badan, anak_keberapa, kebutuhan_khusus, tempat_tinggal, berat_badan, jumlah_saudara_kandung, nama_ayah, pendidikan_ayah, penghasilan_ayah, tahun_lahir_ayah, pekerjaan_ayah, nohp_ayah, nama_ibu, pendidikan_ibu, penghasilan_ibu,tahun_lahir_ibu, pekerjaan_ibu, nohp_ibu, alamat_ortu, nama_wali, pendidikan_wali, penghasilan_wali, tahun_lahir_wali, pekerjaan_wali, nohp_wali, alamat_wali, foto, foto_ktp, foto_kk, foto_akta, status_administrasi, level, tgl_buat, tgl_ubah)
       VALUES (
         "'.$no_pendaftaran.'", "'.$username.'", "'.$nama_siswa.'", " ", "'.$tanggal_lahir.'", " ", " ", "'.$nonik.'", " ", " ", " ", " ", " ", " ", " ", 
         
@@ -51,7 +51,7 @@ if (isset($_POST['tambah'])){
         " ", " ", " ", " ", " ", " ", " ", 
   
         " ", " ", " ", " ", " ", " ", " ",
-        NULL, "Belum diVerifikasi", "Calon Peserta Didik",
+        NULL,NULL, NULL, NULL, "Belum diVerifikasi", "Calon Peserta Didik",
         "'.$currentDate.'", 
         "'.$currentDate.'")';
     

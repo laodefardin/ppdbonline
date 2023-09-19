@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: Jul 24, 2023 at 03:16 AM
+-- Generation Time: Sep 19, 2023 at 04:55 AM
 -- Server version: 8.0.30
 -- PHP Version: 7.4.33
 
@@ -198,6 +198,9 @@ CREATE TABLE `tb_siswa` (
   `nohp_wali` varchar(20) NOT NULL,
   `alamat_wali` varchar(100) NOT NULL,
   `foto` varchar(500) CHARACTER SET latin1 COLLATE latin1_swedish_ci DEFAULT NULL,
+  `foto_ktp` varchar(500) NOT NULL,
+  `foto_kk` varchar(500) NOT NULL,
+  `foto_akta` varchar(500) NOT NULL,
   `status_administrasi` varchar(300) DEFAULT NULL,
   `level` varchar(40) NOT NULL,
   `tgl_buat` datetime NOT NULL,
@@ -208,10 +211,10 @@ CREATE TABLE `tb_siswa` (
 -- Dumping data for table `tb_siswa`
 --
 
-INSERT INTO `tb_siswa` (`id_siswa`, `no_pendaftaran`, `username`, `nama_siswa`, `jenis_kelamin`, `tanggal_lahir`, `agama_siswa`, `alamat_jalan`, `nonik`, `tempat_lahir`, `nama_negara`, `nama_provinsi`, `nama_kabupaten`, `alamat_kelurahan`, `alamat_kecamatan`, `kode_pos`, `moda_transportasi`, `tinggi_badan`, `anak_keberapa`, `kebutuhan_khusus`, `tempat_tinggal`, `berat_badan`, `jumlah_saudara_kandung`, `nama_ayah`, `pendidikan_ayah`, `penghasilan_ayah`, `tahun_lahir_ayah`, `pekerjaan_ayah`, `nohp_ayah`, `nama_ibu`, `pendidikan_ibu`, `penghasilan_ibu`, `tahun_lahir_ibu`, `pekerjaan_ibu`, `nohp_ibu`, `alamat_ortu`, `nama_wali`, `pendidikan_wali`, `penghasilan_wali`, `tahun_lahir_wali`, `pekerjaan_wali`, `nohp_wali`, `alamat_wali`, `foto`, `status_administrasi`, `level`, `tgl_buat`, `tgl_ubah`) VALUES
-(18, '001654162304', 'admin', 'Laode Muh ZulFardinsyah', 'Perempuan', '1996-07-14', 'Budha', 'Jl. Btn Axuri Blok D No 12', '1232322323123312', 'Mamuju', 'Indonesia', 'Sulbar', 'Mamuju', 'Papalang', 'Papalang', '1923', 'Jalan Kaki', '123', '123', 'Tidak', 'Bersama Orang Tua', '123', '123', 'Bambang', 'S3', '0', '1978', 'PNS/TNI/POLRI', '085240330000', 'Karin', 'SMP Sederajat', '500.000 - 999.999', '1972', 'Karyawan Swasta', '082393448980', 'Jl. Kemanggisan, Komp. Griya Adam, No. 4-C.', '', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230233st2aksd.jpg', 'Lulus', 'Calon Peserta Didik', '2023-06-21 11:41:28', '2023-06-30 08:53:09'),
-(33, '002357356595', 'putri', 'Putri Cahyani', 'Perempuan', '2000-03-12', 'Islam', 'Jl. Bandung Kemayoran City Jakarta Utara, No 12', '1232322323232312', 'Bandung', 'Indonesia', 'Bandung', 'Malang', 'Jakarta', 'Medan', '50000', 'Kendaraan Priadi', '230', '19', 'Tidak', 'Panti Asuhan', '123', '20', 'Bambang Prabowo', 'SMP Sederajat', 'Lebih dari 20 juta', '1992', 'Pedagang Besar', '081129239232', 'Mega Jokowi Ratnasari', 'D2', '', '1988', 'Karyawan Swasta', '089221323742', '', '-', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230231steid_al_adha_instagram_story_04 (1).jpg', 'Belum diVerifikasi', 'Calon Peserta Didik', '2023-07-01 10:29:27', '2023-07-01 10:29:27'),
-(34, '003089563981', 'hamirah', 'Hamirah Bagus', 'Perempuan', '2009-12-23', 'Islam', 'Papalang', '1232322323232312', 'Mamuju', 'Indonesia', 'Bandung', 'Mamuju', 'Papalang', 'Papalang', '91511', 'Jemputan Sekolah', '123', '123', 'Tidak', 'Panti Asuhan', '123', '123', 'Marcel', 'SMP Sederajat', '500.000 - 999.999', '1992', 'Karyawan Swasta', '082393448980', 'Mega Jokowi Ratnasari', 'SMA Sederajat', '', '1988', 'Karyawan Swasta', '082393448980', '', '-', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230843stIMG_4504.JPG', 'Belum diVerifikasi', 'Calon Peserta Didik', '2023-07-01 16:40:11', '2023-07-01 16:40:11');
+INSERT INTO `tb_siswa` (`id_siswa`, `no_pendaftaran`, `username`, `nama_siswa`, `jenis_kelamin`, `tanggal_lahir`, `agama_siswa`, `alamat_jalan`, `nonik`, `tempat_lahir`, `nama_negara`, `nama_provinsi`, `nama_kabupaten`, `alamat_kelurahan`, `alamat_kecamatan`, `kode_pos`, `moda_transportasi`, `tinggi_badan`, `anak_keberapa`, `kebutuhan_khusus`, `tempat_tinggal`, `berat_badan`, `jumlah_saudara_kandung`, `nama_ayah`, `pendidikan_ayah`, `penghasilan_ayah`, `tahun_lahir_ayah`, `pekerjaan_ayah`, `nohp_ayah`, `nama_ibu`, `pendidikan_ibu`, `penghasilan_ibu`, `tahun_lahir_ibu`, `pekerjaan_ibu`, `nohp_ibu`, `alamat_ortu`, `nama_wali`, `pendidikan_wali`, `penghasilan_wali`, `tahun_lahir_wali`, `pekerjaan_wali`, `nohp_wali`, `alamat_wali`, `foto`, `foto_ktp`, `foto_kk`, `foto_akta`, `status_administrasi`, `level`, `tgl_buat`, `tgl_ubah`) VALUES
+(18, '001654162304', 'admin', 'Laode Muh ZulFardinsyah1', 'Perempuan', '1996-07-14', 'Budha', 'Jl. Btn Axuri Blok D No 12', '1232322323123312', 'Mamuju', 'Indonesia', 'Sulbar', 'Mamuju', 'Papalang', 'Papalang', '1923', 'Jalan Kaki', '123', '123', 'Tidak', 'Bersama Orang Tua', '123', '123', 'Bambang', 'S3', '0', '1978', 'PNS/TNI/POLRI', '085240330000', 'Karin', 'SMP Sederajat', '500.000 - 999.999', '1972', 'Karyawan Swasta', '082393448980', 'Jl. Kemanggisan, Komp. Griya Adam, No. 4-C.', '', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230233st2aksd.jpg', '1920230450thcommon-dashboard-1x.png', '1920230452thmain-qimg-0ca61dc33c8355fc36f03c0631ebc1d5.jpeg', '1920230452thINSTAGRAM.jpg', 'Lulus', 'Calon Peserta Didik', '2023-06-21 11:41:28', '2023-09-19 12:43:06'),
+(33, '002357356595', 'putri', 'Putri Cahyani', 'Perempuan', '2000-03-12', 'Islam', 'Jl. Bandung Kemayoran City Jakarta Utara, No 12', '1232322323232312', 'Bandung', 'Indonesia', 'Bandung', 'Malang', 'Jakarta', 'Medan', '50000', 'Kendaraan Priadi', '230', '19', 'Tidak', 'Panti Asuhan', '123', '20', 'Bambang Prabowo', 'SMP Sederajat', 'Lebih dari 20 juta', '1992', 'Pedagang Besar', '081129239232', 'Mega Jokowi Ratnasari', 'D2', '', '1988', 'Karyawan Swasta', '089221323742', '', '-', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230231steid_al_adha_instagram_story_04 (1).jpg', '', '', '', 'Belum diVerifikasi', 'Calon Peserta Didik', '2023-07-01 10:29:27', '2023-07-01 10:29:27'),
+(34, '003089563981', 'hamirah', 'Hamirah Bagus', 'Perempuan', '2009-12-23', 'Islam', 'Papalang', '1232322323232312', 'Mamuju', 'Indonesia', 'Bandung', 'Mamuju', 'Papalang', 'Papalang', '91511', 'Jemputan Sekolah', '123', '123', 'Tidak', 'Panti Asuhan', '123', '123', 'Marcel', 'SMP Sederajat', '500.000 - 999.999', '1992', 'Karyawan Swasta', '082393448980', 'Mega Jokowi Ratnasari', 'SMA Sederajat', '', '1988', 'Karyawan Swasta', '082393448980', '', '-', 'Tidak Sekolah', '0', '', 'Tidak Bekerja', '', '', '0120230843stIMG_4504.JPG', '', '', '', 'Belum diVerifikasi', 'Calon Peserta Didik', '2023-07-01 16:40:11', '2023-07-01 16:40:11');
 
 --
 -- Indexes for dumped tables
@@ -285,7 +288,7 @@ ALTER TABLE `tb_pengguna`
 -- AUTO_INCREMENT for table `tb_pengumuman`
 --
 ALTER TABLE `tb_pengumuman`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `tb_siswa`
